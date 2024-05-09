@@ -1,7 +1,12 @@
+*{
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Lato", sans-serif;
 }
-
+.no-scroll {
+    overflow: hidden;
+}
 img {
     height: 100%;
     width: 100%;
@@ -10,6 +15,10 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    transition: filter .6s;
+}
+.section-blur { 
+    filter: blur(2px)
 }
 /*menu mobile*/
 .header {
@@ -18,11 +27,13 @@ section {
     height: 70px;
 }
 .nav-responsive {
-    border: 2px solid red;
-    background-color: #88f9;
+    background-color: #fffd;
+    font-size: large;
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     position: fixed;
@@ -30,8 +41,25 @@ section {
     transition: transform .4s;
     z-index: 1000;
 }
-.nav-responsive:hover {
+.nav-responsive-open {
     transform: translatex(0);
+}
+.nav-responsive-li {
+    width: 230px;
+    text-align: center;
+    padding: 10px;
+    background: #555;
+    color: #fff;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: transform .4s;
+}
+.a-li {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-responsive-li:active {
+    transform: scale(.7);
 }
 .btn-open-menu, .btn-close-menu {
     display: flex;
@@ -41,8 +69,12 @@ section {
     grid-column: 2 / 3;
     transition: transform .6s;
     padding: 20px;
+    z-index: 1000;
 }
-.btn-close-menu {
+.open {
+    transform: scale(1);
+}
+.close {
     transform: scale(0);
 }
 .img-menu {
@@ -61,13 +93,7 @@ section {
 .title-container {
     display: flex;
     align-items: center;
-    gap: 20px
-}
-.logo-container {
-    width: 50px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin-left: 5px;
+    padding: 15px;
 }
 /*menu*/
 
@@ -221,6 +247,7 @@ h1 {
 }
 /*Tarifas*/
 
+/*Contacto*/
 .form {
     display: flex;
     flex-direction: column;
@@ -259,3 +286,20 @@ input::placeholder, textarea::placeholder {
 .btn-send:active {
     transform: scale(.6);
 }
+
+
+.h2-contact {
+    margin: 25px auto;
+    text-align: center;
+}.img-icon {
+    width: 35px;
+}
+.whatsapp, .number-phone {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: large;
+}
+/*Contacto*/
