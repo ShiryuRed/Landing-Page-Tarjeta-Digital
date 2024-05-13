@@ -25,6 +25,10 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff9;
 }
 .nav-responsive {
     background-color: #fffd;
@@ -107,10 +111,15 @@ h1 {
 .text {
     margin: 10px;
     font-size: 1rem;
+    
+}
+.presentacion > .text {
+    text-align: center;
 }
 .btn-container {
     display: flex;
     justify-content: space-around;
+    margin-top: 15px;
 }
 .btn-mi-tarjeta, .btn-saber-mas {
     padding: 10px;
@@ -187,6 +196,7 @@ h1 {
     gap: 25px;
     margin: 30px auto;
     border-radius: 20px;
+    text-align: center;
 }.style-servicio-2 {
     background-color: #222;
     color: #fff;
@@ -236,6 +246,7 @@ h1 {
 .arrow-container {
     transform: rotate(0deg);
     transition: transform .6s;
+    max-height: 30px;
 }
 .title-preguntas {
     margin: 5px auto;
