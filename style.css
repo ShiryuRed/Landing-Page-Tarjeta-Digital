@@ -28,7 +28,15 @@ section {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #fff9;
+}
+.background-header {
+    background-color: #fffd;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    z-index: 0;
+    filter: blur(1px);
 }
 .nav-responsive {
     background-color: #fffd;
@@ -99,6 +107,7 @@ section {
     display: flex;
     align-items: center;
     padding: 15px;
+    z-index: 100;
 }
 /*menu*/
 
@@ -232,12 +241,19 @@ h1 {
 .servicio-2 {
     color: #fff;
 }
+/*Tarifas*/
+
+
+
+/*Preguntas frecuentes*/
 .preguntas {
     border: 3px solid #333;
     padding: 10px 20px;
     max-height: 100px;
     transition: all .4s ease-in-out;
     margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }.preguntas[open] {
     max-height: 600px;
 }
@@ -248,6 +264,9 @@ h1 {
     transform: rotate(0deg);
     transition: transform .6s;
     max-height: 30px;
+    max-width: 30px;
+    background-color: red;
+    grid-column: 3 / 4;
 }
 .title-preguntas {
     margin: 5px auto;
