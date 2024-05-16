@@ -265,7 +265,6 @@ h1 {
     transition: transform .6s;
     max-height: 30px;
     max-width: 30px;
-    background-color: red;
     grid-column: 3 / 4;
 }
 .title-preguntas {

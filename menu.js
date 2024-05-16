@@ -31,4 +31,26 @@ navResponsiveLi.forEach(li => {
             },600)
     });
   });
-  
+
+const btnAccion = document.querySelector(".btn-saber-mas")
+
+function masInformacion() {
+    // Lista de enlaces
+    const enlaces = [
+        'https://opengameart.org/content/approaching-the-tower',
+        'https://opengameart.org/content/zelda-like-tilesets-and-sprites',
+        'https://funnyfrontend.com/efectos-texto-css-svg-html/#google_vignette',
+        'https://suizos-pizza.com/',
+        'https://www.youtube.com/'
+        // Ejemplos de paginas
+    ];
+
+    // Elige un enlace aleatorio
+    const enlaceAleatorio = enlaces[Math.floor(Math.random() * enlaces.length)];
+
+    // Abre el enlace en una nueva pestaña
+    window.open(enlaceAleatorio, '_blank');
+}
+btnAccion.addEventListener("click", ()=> {
+    masInformacion();
+})
