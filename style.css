@@ -3,6 +3,9 @@
 }
 body {
     font-family: "Lato", sans-serif;
+    /* background-color: #090132;
+    color: #fff; */
+    background-color: #efefef;
 }
 .no-scroll {
     overflow: hidden;
@@ -19,8 +22,6 @@ section {
     display: flex;
     flex-direction: column;
     transition: filter .6s;
-    
-    background-color: var(--background);
 }
 .section-blur { 
     filter: blur(2px)
@@ -35,7 +36,7 @@ section {
     z-index: 100;
 }
 .background-header {
-    background-color: #fffd;
+    background-color: #efefefdd;
     position: fixed;
     top: 0;
     height: 70px;
@@ -65,8 +66,8 @@ section {
 .nav-responsive-li {
     width: 230px;
     text-align: center;
-    padding: 10px;
-    background: #555;
+    padding: 5px;
+    background: #888;
     color: #fff;
     border-radius: 15px;
     transform: scale(1);
@@ -113,6 +114,9 @@ section {
     align-items: center;
     padding: 15px;
     z-index: 100;
+}
+.title-container > h2 > b {
+    color: #f00
 }
 /*menu*/
 
