@@ -346,4 +346,11 @@ input::placeholder, textarea::placeholder {
     gap: 5px;
     font-size: large;
 }
+.o {
+    text-align: center;
+}
 /*Contacto*/
+
+footer > p {
+    text-align: center
+}
